@@ -1,0 +1,31 @@
+.l-footer-container {
+    color:white;
+    // height: 150px;
+    height: auto;
+    width: 100%;
+    background-color: #9D8670;
+    font-size: 20px;
+    text-align: center;
+
+    p {
+        padding-top: 43px;
+        padding-bottom: 39px;
+      }
+    .copyright {
+        margin-left: 0;
+        color: #FFFFFF;
+    }  
+  }
+
+  @include md {
+      .copyright {
+          margin-left: 0;
+          margin-bottom: 0;
+      }
+  }  
+
+  @include sm {
+      .copyright {
+          margin-bottom: 0;
+      }
+  }  

@@ -1,0 +1,77 @@
+.l-sidebar-container {
+    width: 19%;
+    background-color: #F2EDE9;
+
+    #my-cross {
+        display: none;
+      } 
+
+    ul {
+        list-style-type: none;
+        font-family: "mplus 1m";
+        font-size: 20px;
+        padding-left: 18.0%;
+        color: #707070;
+        line-height: 2.35;
+
+        .burger {
+            font-family: "mplus 1m";
+            font-size: 24px;
+            font-weight: bold;
+            padding-top: 90px;
+            padding-left: 12.5%;
+            color: #707070;
+          }
+
+        .side {
+            font-family: "mplus 1m";
+            font-size: 24px;
+            font-weight: bold;
+            padding-top: 45px;
+            padding-left: 12.5%;
+            color: #707070;
+        }  
+
+        .beverage {
+            font-family: "mplus 1m";
+            font-size: 24px;
+            font-weight: bold;
+            padding-top: 45px;
+            padding-left: 12.5%;
+            color: #707070;
+          }
+      }  
+
+  }
+
+  @include md {
+    
+    .l-sidebar-container {
+        display: none;
+
+        #my-cross {
+            display: block;
+            color: #707070;
+            float: right;
+            margin-top: 25px;
+            margin-right: 25px;  
+            z-index: 100;
+          }
+         
+        .burger {
+            padding-top: 217px;
+            padding-left: 12.5%;
+          }  
+      }
+
+    .l-sidebar-container.clicked {
+        display: block;
+        float: right;
+        width: 44%;
+        z-index: 300;
+        position: absolute;
+        top: 0;
+        left: 56%;
+        height: 100%;
+    }
+  }   

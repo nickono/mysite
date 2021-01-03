@@ -1,0 +1,71 @@
+.pager {
+    display: flex;
+    margin: 150px auto 64px;
+    justify-content: center;
+
+    .sm-left, .sm-right {
+      display: none;
+    } 
+
+    ul {
+      display: flex;;
+      list-style: none;
+    }
+
+    span, li {
+      font-family: Roboto;
+      font-size: 1.6rem;
+      line-height: 3.3rem;
+      color: #707070;
+    }
+
+    li {
+      border: solid 1px #707070;
+      padding: 0 1.3rem;
+      margin: 0 0.75rem;
+      background-color: #FFFFFF;
+    }
+
+    .one {
+      background-color: #3C2B1C;
+      color: #FFFFFF;
+      margin-left: 1.7rem;
+    }
+
+    .ten {
+      margin-right:1.7rem;
+    }
+  }
+
+@include sm {
+  .pager {
+    // display: block;
+    justify-content: space-between;
+    width: 89.4%;
+    // margin: 60.4px auto 31px;
+    margin-top: 60.4px; 
+    margin-bottom: 31px; 
+
+    .md {
+      display: none;
+    }
+    .sm-left {
+      // text-align: left;
+      // margin: 0 0 0 5.3%;
+      // display: block;
+      display: block;
+      // justify-content: left;
+    }
+    .sm-right {
+      display: block;
+    }
+    ul {
+      display: none;
+    }
+  }  
+}  
+  
+  
+  
+  
+  

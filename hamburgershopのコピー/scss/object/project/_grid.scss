@@ -1,0 +1,30 @@
+.grid {
+    width: 87.2%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: minmax(33.3%, auto);
+    margin: 0 6.4% 0;
+
+    .item img {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+ 
+  @include md {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+
+    }
+  }
+
+  @include sm {
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  
+  
+  

@@ -1,0 +1,421 @@
+.mainVisual {
+    background-color: $bgc-white;
+
+    h2 {
+        font-family: $m;
+        font-size: 3.6rem;
+        font-weight: bold;
+        color: $c;
+        padding-top: 70px;
+        padding-left: 6.5%; 
+      }
+
+    .mainVisual-text {
+        font-family: $m;
+        font-size: 1.6rem;
+        font-weight: regular;
+        width: 100%;
+        padding-top: 33px;
+        padding-left: 6.5%; 
+        padding-right: 6.5%; 
+    }
+  }
+
+.cheeseburger-container {
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 43.5%;
+        height: auto;
+        margin-left: 0;
+        padding-left: 0;    
+      }
+
+    .cheeseburger-container-right {
+        width: 43.5%;
+        height:   auto;
+        background-color: $bgc-brown;
+        // text-align: center;
+
+        h2, h3, p {
+          color: white;
+          font-family: $m;
+          //new addition
+          // text-align: left;
+          
+
+        }
+
+        h2 {
+          font-size: 3.6rem;
+          line-height: 4.3rem;
+          font-weight: bold;
+          padding-top: 12.7%;
+          padding-bottom: 12.7%;
+          padding-left: 9.3%;
+        }
+
+        h3 {
+          font-size: 2.4rem;
+          line-height: 2.9rem;
+          font-weight: bold;
+          padding-bottom: 4.7%;
+          //new addition
+          // margin: 0 auto;
+          // text-align: left;
+          padding-left: 9.3%;
+        } 
+
+        p {
+          width: 75.2%;
+          font-size: 1.6rem;
+          line-height: 1.9rem;
+          // margin: 0 auto;
+          text-align: left;
+          padding-left: 9.3%;
+        }
+
+        button {
+          display: block;
+          width: 43.2%;
+          height: 76px;
+          color: $c-menu;
+          background: #FFFFFF;
+          font-size: 1.6rem;
+          margin: 12.7% auto 12.7%;
+          border-radius: 38px;;
+        }
+      }      
+  }
+
+.w-cheeseburger-container {
+    // width: 100%;
+    // height: 471px;
+    // display: flex;
+    // justify-content: center;
+    // text-align: center;
+    @include cheeseburger-container;
+
+    img {
+        // width: 43.5%;
+        @include cheeseburger-container-img;
+    }
+
+    .w-cheeseburger-container-right {
+        // width: 43.5%;
+        // height: 471px;
+        // background-color:$bgc-brown;
+        @include cheeseburger-container-right;
+
+        h2, h3, p {
+            color: white;
+            font-family: $m;
+        }
+        
+        h2 {
+            // font-size: 3.6rem;
+            // line-height: 4.3rem;
+            // font-weight: bold;
+            // padding-top: 12.7%;
+            // padding-bottom: 12.7%;
+            @include cheeseburger-container-h2;
+        }
+        
+        h3 {
+            // font-size: 2.4rem;
+            // line-height: 2.9rem;
+            // font-weight: bold;
+            // padding-bottom: 4.7%;
+            @include cheeseburger-container-h3
+        } 
+        
+        p {
+            // width: 75.2%;
+            // font-size: 1.6rem;
+            // line-height: 1.9rem;
+            // margin: 0 auto;
+            // text-align: left;
+            @include cheeseburger-container-p
+        }
+        
+        button {
+            // width: 292px;
+            // height: 76px;
+            // color: #707070;
+            // background: #FFFFFF;
+            // font-size: 1.6rem;
+            // margin-top: 12.7%;
+            // border-radius: 38px;
+            @include cheeseburger-container-button;
+        }
+    }
+}
+
+.s-cheeseburger-container {
+    // width: 100%;
+    // height: 471px;
+    // margin-top: 30px;
+    // display: flex;
+    // justify-content: center;
+    // text-align: center;
+    @include cheeseburger-container;
+
+    img {
+      // width: 43.5%;
+      @include cheeseburger-container-img;
+    }
+
+    .s-cheeseburger-container-right {
+      // width: 43.5%;
+      // height: 471px;
+      // background-color: #3C2B1C;
+      @include cheeseburger-container-right;
+
+      h2, h3, p {
+        color: white;
+        font-family: "mplus 1m";
+      }
+      
+      h2 {
+        // font-size: 3.6rem;
+        // line-height: 4.3rem;
+        // font-weight: bold;
+        // padding-top: 12.7%;
+        // padding-bottom: 12.7%;
+        @include cheeseburger-container-h2;
+      }
+      
+      h3 {
+        // font-size: 2.4rem;
+        // line-height: 2.9rem;
+        // font-weight: bold;
+        // padding-bottom: 4.7%;
+        @include cheeseburger-container-h3;
+      } 
+      
+      p {
+        // width: 75.2%;
+        // font-size: 1.6rem;
+        // line-height: 1.9rem;
+        // text-align: left;
+        // margin: 0 auto;
+        @include cheeseburger-container-p;
+      }
+      
+      button {
+        // width: 292px;
+        // height: 76px;
+        // color: #707070;
+        // background: #FFFFFF;
+        // font-size: 1.6rem;
+        // margin-top: 12.7%;
+        // border-radius: 38px;
+        // @include button-cheeseburger
+        @include cheeseburger-container-button;
+      }
+    }
+  }  
+
+  @include md {
+    .mainVisual {
+      h2 {
+        padding-left: 0;
+      }
+    }
+
+    .cheeseburger-container {
+      // display: block;
+      // margin: 0 auto;
+      // text-align: center;
+
+      // img {
+      //   text-align: center;
+      //   margin: 0 auto;
+      //   width: 43.5%;
+      //   vertical-align: ;
+      //   }
+
+      .cheeseburger-container-right {
+        // width: 100%;
+        // width: 43.5%;
+        // margin: 0 auto;
+
+        h2 {
+          font-size: 2.0rem;
+        }  
+        h3 {
+          font-size: 1.6rem;
+        }
+      }
+    }
+    .w-cheeseburger-container {
+      // display: block;
+
+      // img {
+      //   width: 43.5%;
+      // }
+
+      .w-cheeseburger-container-right {
+        // width: 43.5%;
+        // margin: 0 auto;
+
+        h2 {
+          font-size: 2.0rem;
+        }  
+
+        h3 {
+          font-size: 1.6rem;
+        }
+      }
+    }
+    .s-cheeseburger-container {
+      // display: block;
+
+      .s-cheeseburger-container-right {
+        // margin: 0 auto;
+
+        h2 {
+          font-size: 2.0rem;
+        }  
+
+        h3 {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
+
+@include sm {
+  .mainVisual {
+    h2 {
+        // font-family: $m;
+        // font-size: 3.6rem;
+        // font-weight: bold;
+        // color: $c;
+        padding-top: 36px;
+        // padding-left: 6.5%; 
+        // padding-top: 36px;
+        padding-bottom: 36px;
+    }
+    .mainVisual-text {
+      // font-family: $m;
+      // font-size: 1.6rem;
+      // font-weight: regular;
+      // width: 100%;
+      padding-top: 0;
+      // padding-left: 6.5%; 
+    }
+  }
+  .cheeseburger-container {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    img {
+      width: 90.0%;
+      vertical-align: bottom;
+      }
+
+    .cheeseburger-container-right {
+      width: 90.0%;
+      margin: 0 auto;
+      padding-bottom: 43.7px;
+
+      h2 {
+        padding-left: 5.1%;
+        text-align: left;
+      }  
+
+      h3 {
+        padding-left: 5.1%;
+        text-align: left;
+      }
+
+      p {
+        padding-left: 5.1%;
+        text-align: left;
+      }
+
+      button {
+        margin-bottom: 43.7px;
+      }
+    }
+  }
+
+  .w-cheeseburger-container {
+    @include cheeseburger-container-sm;
+
+    img {
+      // width: 90.0%;
+      @include cheeseburger-container-img-sm
+    }
+
+    .w-cheeseburger-container-right {
+      // width: 90.0%;
+      // margin: 0 auto;
+      @include cheeseburger-container-right-sm;
+
+      h2 {
+        // font-size: 2.0rem;
+        @include cheeseburger-container-h2-sm;
+      }  
+
+      h3 {
+        // font-size: 1.6rem;
+        @include cheeseburger-container-h3-sm;
+      }
+
+      p {
+        @include cheeseburger-container-p-sm;
+      }
+
+      button {
+        @include cheeseburger-container-button-sm
+      }
+    }
+  }
+  .s-cheeseburger-container {
+    // display: block;
+    // //new addition
+    // text-align: center;
+    @include cheeseburger-container-sm;
+
+    img {
+      @include cheeseburger-container-img-sm;
+    }     
+
+    .s-cheeseburger-container-right {
+      // width: 90.0%;
+      // margin: 0 auto;
+        @include cheeseburger-container-right-sm;
+
+      h2 {
+        // font-size: 2.0rem;
+        @include cheeseburger-container-h2-sm;
+      }  
+
+      h3 {
+        // font-size: 1.6rem;
+        @include cheeseburger-container-h3-sm;
+      }
+
+      p {
+        @include cheeseburger-container-p-sm;
+      }
+
+      button {
+        @include cheeseburger-container-button-sm;
+      }
+    }
+  }
+ 
+}  
+  
+  
+

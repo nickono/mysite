@@ -1,0 +1,264 @@
+/* PC_single */
+.p-main-container {
+  background-color: skyblue;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.p-main-container img {
+  width: 100%;
+  height: 500px;
+}
+
+.p-main-container h1 {
+  position: absolute;
+  top: 220px;
+  left: 5.5%;
+  margin-left: 6.4%;
+  font-family: "mplus 1m";
+  font-size: 6rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  vertical-align: middle;
+}
+
+section h2 {
+  margin-top: 67px;
+  margin-left: 6.4%;
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+
+#p-tag-text1 {
+  margin-top: 67px;
+  margin-left: 6.4%;
+  margin-right: 6.4%;
+  color: #3C2A10;
+  font-family: "mplus 1m";
+  font-style: 1.6rem;
+  line-height: 1.9rem;
+}
+
+section .title3 {
+  color: #3C2A10;
+  margin-top: 65px;
+  margin-left: 6.4%;
+  font-size: 2.8rem;
+  font-family: "mplus 1m";
+  font-weight: bold;
+  line-height: 3.4rem;
+}
+
+section .title4 {
+  color: #3C2A10;
+  margin-top: 66px;
+  margin-left: 6.4%;
+  font-size: 2.0rem;
+  line-height: 2.4rem;
+}
+
+section .title5, .title6 {
+  color: #3C2A10;
+  margin-top: 66px;
+  margin-left: 6.4%;
+  font-size: 2.0rem;
+  line-height: 2.4rem;
+}
+
+.Blockquote {
+  width: 87.1%;
+  height: 319px;
+  margin: 61px 6.4% 0;
+  padding: 50px 60px 0 50px;
+  font-family: "mplus 1m";
+  font-size: 1.6rem;
+  font-weight: regular;
+  line-height: 1.9rem;
+  background-color: #F5F5F5;
+}
+
+.source {
+  margin-top: 62px;
+  margin-left: 6.4%;
+  color: #3C2A10;
+}
+
+.p-cheese-middle-container {
+  width: 87.2%;
+  height: 500px;
+  margin: 61px 6.4% 0;
+}
+
+.p-cheese-middle-container img {
+  width: 100%;
+  height: 500px;
+}
+
+.p-cheese-bottom-container-first {
+  width: 87.2%;
+  height: 358px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+  margin-left: 6.4%;
+}
+
+.p-cheese-bottom-container-first img {
+  width: 43.0%;
+}
+
+.p-cheese-bottom-container-first p {
+  color: #3C2A10;
+  width: 57.0%;
+  padding-left: 3.0%;
+  font-family: "mplus 1m";
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+.p-cheese-bottom-container-second {
+  width: 87.2%;
+  height: 358px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+  margin-left: 6.4%;
+}
+
+.p-cheese-bottom-container-second img {
+  width: 43.0%;
+}
+
+.p-cheese-bottom-container-second p {
+  color: #3C2A10;
+  width: 57.0%;
+  padding-right: 3.0%;
+  font-family: "mplus 1m";
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+.cheese-bottom {
+  margin: 60px auto 60px;
+  text-align: center;
+}
+
+.grid {
+  width: 81%;
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+  -ms-grid-columns: (27%)[3];
+      grid-template-columns: repeat(3, 27%);
+  grid-auto-columns: minmax(27%, auto);
+}
+
+.list p {
+  color: #3C2A10;
+  font-family: "mplus 1m";
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+#list-1 {
+  margin-top: 63px;
+  margin-left: 9.7%;
+}
+
+.list-2 {
+  margin-top: 20px;
+  margin-left: 10.8%;
+}
+
+.list-3 {
+  margin-top: 20px;
+  margin-left: 9.7%;
+}
+
+.list-4 {
+  margin-top: 60px;
+  margin-left: 9.7%;
+}
+
+.list-5 {
+  margin-top: 20px;
+  margin-left: 10.8%;
+}
+
+.list-6 {
+  margin-top: 20px;
+  margin-left: 9.7%;
+}
+
+.html-tag ul li {
+  color: #3C2A10;
+  font-family: "mplus 1m";
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  list-style: none;
+}
+
+.html-tag {
+  width: 87.2%;
+  height: 237px;
+  background: #F5F5F5;
+  margin: 69px 6.4% 50px;
+  padding-top: 50px;
+  padding-left: 3.2%;
+}
+
+table {
+  width: 87.2%;
+  height: 305px;
+  margin: 0 6.4% 0;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 31px 0 30px 30px;
+  color: #3C2A10;
+  font-family: "mplus 1m";
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  border: solid 1px #707070;
+}
+
+.table-l {
+  width: 27.6%;
+}
+
+.table-r {
+  width: 59.8%;
+}
+
+button {
+  display: block;
+  width: 27.6%;
+  height: 104px;
+  background: #F2EDE9;
+  border-radius: 20px;
+  margin-top: 60px;
+  margin-left: 6.4%;
+  margin-bottom: 65px;
+  border: solid 1px #707070;
+  color: #3C2A10;
+  font-family: "mplus 1m";
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  font-weight: bold;
+}
+
+small {
+  margin-left: 6.4%;
+  color: #3C2A10;
+  font-family: "mplus 1m";
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 330px;
+}
+/*# sourceMappingURL=PC_single.css.map */
