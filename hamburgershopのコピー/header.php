@@ -23,7 +23,7 @@
         <header class="l-header-container">
           <h2 id="h2title">Menu</h2>
           <h1 class="header__ttl">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?><span class="header__ttl__sub"></span></a>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
           </h1>
           <p class="header__descrition"><?php bloginfo( 'description' ); ?></p>
           <?php get_search_form(); ?>

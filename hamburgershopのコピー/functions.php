@@ -23,6 +23,8 @@
         wp_enqueue_style( 'hamburgershop', get_template_directory_uri() . '/css/hamburgershop.css', array(), '1.0.0' );
         wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css', array(), '1.0.0' );
         wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', "", "3.5.1", true );
-        wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );
+        wp_enqueue_script( 'toggle', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );
     }
     add_action( 'wp_enqueue_scripts', 'hamburgershop_script' );
+
+    

@@ -11,6 +11,7 @@
         </div>  
         <div class="p-takeout-eatin-container">
           <div class="takeout-container">
+            <a href="<?php echo get_template_directory_uri(); ?>/archive.php /">
             <h2 class="p-h2title">Take Out<br>__</h2>
             <img src="<?php echo get_template_directory_uri(); ?>/images/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png">
             <div class="p-info1-container">
@@ -25,8 +26,10 @@
                 テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
               </div>
             </div>
+            </a>
           </div>
           <div class="eatin-container">
+            <a href="<?php echo get_template_directory_uri(); ?>/archive.php /">
             <h2 class="p-h2title">Eat In<br>__</h2>
             <img src="<?php echo get_template_directory_uri(); ?>/images/EatIn.png">
             <div class="p-info3-container">
@@ -41,6 +44,7 @@
                 テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
               </div>
             </div>
+            </a>
           </div>  
         </div>
         <div class="p-map-container">

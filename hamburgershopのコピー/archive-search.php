@@ -57,28 +57,28 @@
             <button>詳しく見る</button>
           </div>
         </div>
-        <div class="pager">
-          <span class="md">page&nbsp;1/10&nbsp;&nbsp;&nbsp;&nbsp;＜&nbsp;＜</span>
-          <span class="sm-left">＜＜&nbsp;&nbsp;前へ</span>
-          <span class="sm-right">次へ&nbsp;&nbsp;＞＞</span>
-          <ul>
-            <li class="one">1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li>10</li>
-          </ul>
-          <span class="md">＞＞</span>
-        </div>
+        <?php if ( $wp_query -> max_num_pages > 1 ) : ?>
+          <div class="pager">
+            <span class="md">page&nbsp;1/10&nbsp;&nbsp;&nbsp;&nbsp;＜&nbsp;＜</span>
+            <span class="sm-left">＜＜&nbsp;&nbsp;前へ<?php next_posts_link( 'Prev' ); ?></span>
+            <span class="sm-right">次へ&nbsp;&nbsp;＞＞<?php previous_posts_link( 'Next' ); ?></span>
+            <ul>
+              <li class="one">1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+              <li>7</li>
+              <li>8</li>
+              <li>9</li>
+              <li>10</li>
+            </ul>
+            <span class="md">＞＞</span>
+          </div>
+        <?php endif; ?>  
       </main>
 
 <!-- //footer.phpを読み込むテンプレートタグ（インクルードタグ） -->
 <?php get_footer(); ?>  
 
-<!-- //footer.phpを読み込むテンプレートタグ（インクルードタグ） -->
-<?php get_footer(); ?>  
