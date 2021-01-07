@@ -1,12 +1,21 @@
 <!-- //header.phpを読み込むテンプレートタグ（インクルードタグ） -->
 <?php get_header(); ?>
 
-        <div class="p-main-container">
-            <img class="lg" src="images/cheese-top.png" alt="Cheese Burger Top">
-            <img class="sm" src="images/single-sm.png" alt="Cheese Burger Top">
-            <h1>h1 チーズバーガー</h1> 
-        </div>    
-        <section>
+        <div class="l-main-container">
+            <!-- <img class="lg" src="images/cheese-top.png" alt="Cheese Burger Top">
+            <img class="sm" src="images/single-sm.png" alt="Cheese Burger Top"> -->
+            <!-- <h1>h1 チーズバーガー</h1>  -->
+            <h1><?php the_title(); ?></h1> 
+         
+        
+        <?php if ( have_posts() ) : ?>
+        <?php while ( have_posts() ) : the_post(); ?>
+            <?php the_post_thumbnail( $size, $attr ); ?>
+              <p><?php the_content(); ?></p>
+    <?php endwhile;?> 
+<?php endif; ?>
+</div>
+        <!-- <section>
           <h2>見出しh2</h2>
           <p id="p-tag-text1">Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。</p>
           <h3 class="title3">見出しh3</h3>
@@ -79,7 +88,7 @@
             <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/body&gt;</li>    
             <li>&lt;/html&gt;</li>
           </ul>
-        </div>
+        </div> 
         <table>
           <tr>
             <td class="table-l">テーブル</td><td class="table-r">テーブル</td>
@@ -93,10 +102,10 @@
           <tr>
             <td class="table-l">テーブル</td><td class="table-r">テーブル</td>
           </tr>
-        </table>
+        </table>  
         <button>ボタン</button>
-        <small>boldboldboldboldboldboldbold</small>
-      </main>   
+        <small>boldboldboldboldboldboldbold</small> --> 
+      </main>    
 
 <!-- //siderbar.phpを読み込むテンプレートタグ（インクルードタグ）  -->
 <?php get_sidebar(); ?>

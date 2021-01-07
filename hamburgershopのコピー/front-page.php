@@ -11,7 +11,7 @@
         </div>  
         <div class="p-takeout-eatin-container">
           <div class="takeout-container">
-            <a href="<?php echo get_template_directory_uri(); ?>/archive.php /">
+            <a href="<?php echo get_category_link(5); ?>">
             <h2 class="p-h2title">Take Out<br>__</h2>
             <img src="<?php echo get_template_directory_uri(); ?>/images/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png">
             <div class="p-info1-container">
@@ -29,7 +29,7 @@
             </a>
           </div>
           <div class="eatin-container">
-            <a href="<?php echo get_template_directory_uri(); ?>/archive.php /">
+            <a href="<?php echo get_category_link(4); ?>">
             <h2 class="p-h2title">Eat In<br>__</h2>
             <img src="<?php echo get_template_directory_uri(); ?>/images/EatIn.png">
             <div class="p-info3-container">
@@ -64,3 +64,17 @@
 
 <!-- //footer.phpを読み込むテンプレートタグ（インクルードタグ） -->
 <?php get_footer(); ?>    
+
+
+
+<?php
+    // 指定したカテゴリーの ID を取得
+    //$category_id = get_cat_ID( 'カテゴリー名' );
+
+    // このカテゴリーの URL を取得
+    //$category_link = get_category_link( $category_id );
+?>
+
+<!-- このカテゴリーへのリンクを出力 
+<a href="<?php //echo esc_url( $category_link ); ?>" title="カテゴリー名">カテゴリー名</a>
+-->

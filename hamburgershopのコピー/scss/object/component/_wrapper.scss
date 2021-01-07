@@ -9,8 +9,8 @@
 }
 
 .l-largest-wrapper {
-display: flex;
-z-index: 100;
+    display: flex;
+    z-index: 100;
 }
 
 .l-main-wrapper {
@@ -20,11 +20,11 @@ z-index: 100;
     @include md {
 
     .l-black-screen {
-    display: none;
+        display: none;
     }
 
     .l-black-screen.clicked {
-    display: block;
+        display: block;
     }
 
     .l-largest-wrapper {
@@ -35,3 +35,9 @@ z-index: 100;
         width: 100%;
     }
 }
+
+// @include sm {
+//     .l-black-screen {
+//         height: 283px;
+//     }    
+// }

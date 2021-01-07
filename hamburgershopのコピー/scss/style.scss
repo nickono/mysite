@@ -4,19 +4,24 @@
 @import "foundation/variables";
 
 // layout
+@import "layout/footer";
 @import "layout/header";
 @import "layout/main";
 @import "layout/sidebar";
-@import "layout/footer";
+
+//Object
+// Component
+@import "object/component/editor-style";
+@import "object/component/wrapper";
 
 // Project
-@import "object/project/main-project"; 
 @import "object/project/archive-mainVisual";
-@import "object/project/pager";
 @import "object/project/grid";
+@import "object/project/main-project"; 
+@import "object/project/pager";
 
-// Object
-@import "object/component/wrapper";
+
+
 
 
 

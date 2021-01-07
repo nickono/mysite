@@ -241,15 +241,18 @@
       //   }
 
       .cheeseburger-container-right {
-        // width: 100%;
-        // width: 43.5%;
-        // margin: 0 auto;
-
         h2 {
           font-size: 2.0rem;
+          padding-top: 33px;
+          padding-bottom: 31px;
         }  
         h3 {
           font-size: 1.6rem;
+        }
+        button {
+          margin-top: 45px;
+          padding-bottom: 0px;
+          margin-bottom: 40px;
         }
       }
     }
@@ -315,7 +318,7 @@
     display: block;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
 
     img {
       width: 90.0%;
@@ -326,10 +329,14 @@
       width: 90.0%;
       margin: 0 auto;
       padding-bottom: 43.7px;
+      height: auto;
 
       h2 {
-        padding-left: 5.1%;
+        // padding-left: 5.1%;
+        padding-left: 4.5%;
         text-align: left;
+        padding-top:  34.5px;
+        padding-bottom:  31px;
       }  
 
       h3 {
@@ -343,7 +350,9 @@
       }
 
       button {
-        margin-bottom: 43.7px;
+        margin-top: 40px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
       }
     }
   }

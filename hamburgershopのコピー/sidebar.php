@@ -1,6 +1,19 @@
 <aside class="l-sidebar-container">
-        <i class="fa fa-times fa-5x" id="my-cross" aria-hidden="true"></i>
-        <ul class="p-menu-container">
+<i class="fa fa-times fa-5x" id="my-cross" aria-hidden="true"></i>
+    <?php
+        if ( is_active_sidebar( 'category_widget' ) ) :
+            dynamic_sidebar( 'category_widget' );
+        else:
+    ?>
+    <div class="widget">
+        <h2>No Widget</h2>
+        <p>ウィジットは設定されていません。</p>
+    </div>
+    <?php endif; ?>  
+
+    <!-- <a href="<?php //echo get_template_directory_uri(); ?>/archive.php">バーガー</a> -->
+        
+        <!-- <ul class="p-menu-container">
           <li class="burger">バーガー
             <ul clas="p-burger-container">
               <li class="hamburger">ハンバーガー</li>
@@ -30,6 +43,6 @@
               <li>コーヒー (Ice/Hot)</li>
             </ul>
           </li>      
-        </ul>
+        </ul> -->
       </aside>
     </div>

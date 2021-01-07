@@ -2,44 +2,44 @@
 <?php get_header(); ?>
 
         <section class="p-3-burgers-container">
-          <img class="lg" src="images/3-burgers.png">
-          <!-- <img class="middeum-archive" src="images/middeum-archive.png"> -->
-          <img class="sm" src="images/archive-topimage.png">
-          <h2>Menu: <span>チーズバーガー</span></h2> 
+          <img class="lg" src="<?php echo get_template_directory_uri(); ?>/images/3-burgers.png">
+          <img class="sm" src="<?php echo get_template_directory_uri(); ?>/images/archive-topimage.png">
+          <h2>Menu: 
+            <span class="span-lg">
+              <?php single_cat_title( '', true ); ?>
+            </span>
+            <span  class="span-sm">
+              <br><?php single_cat_title( '', true ); ?>
+            </span>
+          </h2> 
         </section>    
         <section class="mainVisual">
-          <h2>小見出しが入ります</h2>
+          <h2 class="mainVisual-h2">小見出しが入ります</h2>
           <div class="mainVisual-text">
             テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
           </div>
         </section>
-        <div class="cheeseburger-container">
-          <img src="images/cheeseburger2-crop.png">
-          <div class="cheeseburger-container-right">    
-            <h2>チーズバーガー</h2>
-            <h3>小見出しが入ります</h3>
-            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-            <button>詳しく見る</button>
-          </div>  
-        </div>
-        <div class="w-cheeseburger-container">
-          <img src="images/cheeseburger2-crop.png">
-          <div class="w-cheeseburger-container-right">   
-            <h2>ダブルチーズバーガー</h2>
-            <h3>小見出しが入ります</h3>
-            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-            <button>詳しく見る</button>
-          </div>
-        </div> 
-        <div class="s-cheeseburger-container">
-          <img src="images/cheeseburger2-crop.png">
-          <div class="s-cheeseburger-container-right">   
-            <h2>スペシャルチーズバーガー</h2>
-            <h3>小見出しが入ります</h3>
-            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-            <button>詳しく見る</button>
-          </div>
-        </div>  
+        <!-- <div class="cheeseburger-container"> -->
+          <!-- <img src="images/cheeseburger2-crop.png"> -->
+          <!-- <div class="cheeseburger-container-right"> -->
+
+<?php if ( have_posts() ) : ?>
+  <?php while ( have_posts() ) : the_post(); ?>
+    <div class="cheeseburger-container">
+      <?php the_post_thumbnail( $size, $attr ); ?>
+      <div class="cheeseburger-container-right">
+        <h2><?php the_title(); ?></h2>
+        <p <?php post_class(); ?>><?php the_content(); ?></p>
+        <button><a href="<?php echo get_page_link( ); ?>">詳しく見る</a></button>
+      </div> 
+    </div>
+  <?php endwhile;?>
+<?php endif; ?>
+                
+            
+           
+        
+        
         <div class="pager">
           <span class="md">page&nbsp;1/10&nbsp;&nbsp;&nbsp;&nbsp;＜&nbsp;＜</span>
           <span class="sm-left">＜＜&nbsp;&nbsp;前へ</span>
@@ -59,7 +59,14 @@
           <span class="md">＞＞</span>
         </div>
       </main>  
-      <aside class="l-sidebar-container">
+
+      <!-- //siderbar.phpを読み込むテンプレートタグ（インクルードタグ）  -->
+<?php get_sidebar(); ?>
+
+<!-- //footer.phpを読み込むテンプレートタグ（インクルードタグ） -->
+<?php get_footer(); ?>    
+
+      <!-- <aside class="l-sidebar-container">
         <i class="fa fa-times fa-5x" id="my-cross" aria-hidden="true"></i>
         <ul class="p-menu-container">
           <li class="burger">バーガー
@@ -101,4 +108,4 @@
     <script src="js/script.js"></script>  
   </body>     
 </html>
-  
+   -->
