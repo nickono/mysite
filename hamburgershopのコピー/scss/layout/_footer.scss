@@ -6,10 +6,16 @@
     background-color: #9D8670;
     font-size: 20px;
     text-align: center;
+    // margin-top: 100px;
 
     p {
         padding-top: 43px;
         padding-bottom: 39px;
+
+        a {
+            text-decoration: none;
+        }
+
       }
     .copyright {
         margin-left: 0;

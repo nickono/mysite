@@ -19,46 +19,25 @@
             テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
           </div>
         </section>
-        <!-- <div class="cheeseburger-container"> -->
-          <!-- <img src="images/cheeseburger2-crop.png"> -->
-          <!-- <div class="cheeseburger-container-right"> -->
 
 <?php if ( have_posts() ) : ?>
   <?php while ( have_posts() ) : the_post(); ?>
     <div class="cheeseburger-container">
       <?php the_post_thumbnail( $size, $attr ); ?>
       <div class="cheeseburger-container-right">
+      <section id="post-<?php the_ID(); ?>" <?php post_class( 'archive' ); ?>>
         <h2><?php the_title(); ?></h2>
-        <p <?php post_class(); ?>><?php the_content(); ?></p>
-        <button><a href="<?php echo get_page_link( ); ?>">詳しく見る</a></button>
+        <p><?php the_excerpt(); ?></p>
+      </section>  
+        <button><a class="detail" href="<?php echo get_page_link( ); ?>">詳しく見る</a></button>
       </div> 
     </div>
   <?php endwhile;?>
-<?php endif; ?>
+  <?php endif; ?>
+  
+  <?php wp_pagenavi(); ?>
                 
-            
-           
-        
-        
-        <div class="pager">
-          <span class="md">page&nbsp;1/10&nbsp;&nbsp;&nbsp;&nbsp;＜&nbsp;＜</span>
-          <span class="sm-left">＜＜&nbsp;&nbsp;前へ</span>
-          <span class="sm-right">次へ&nbsp;&nbsp;＞＞</span>
-          <ul>
-            <li class="one">1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li class="ten">10</li>
-          </ul>
-          <span class="md">＞＞</span>
-        </div>
-      </main>  
+      </main>   
 
       <!-- //siderbar.phpを読み込むテンプレートタグ（インクルードタグ）  -->
 <?php get_sidebar(); ?>

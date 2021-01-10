@@ -22,6 +22,10 @@ body {
   padding-bottom: 39px;
 }
 
+.l-footer-container p a {
+  text-decoration: none;
+}
+
 .l-footer-container .copyright {
   margin-left: 0;
   color: #FFFFFF;
@@ -202,7 +206,7 @@ body {
   display: none;
 }
 
-.p-topimage-container p {
+.p-topimage-container p.dummy-site {
   display: table-cell;
   vertical-align: middle;
   color: #FFFFFF;
@@ -211,6 +215,8 @@ body {
   position: absolute;
   top: calc(50% - 20px);
   left: 86px;
+  margin-top: 0;
+  margin-left: 0;
 }
 
 /*  PC_archive  */
@@ -252,6 +258,10 @@ body {
   display: none;
 }
 
+.cheeseburger-container .cheeseburger-container-right button a.detail {
+  text-decoration: none;
+}
+
 .l-main-container img {
   width: 100%;
   height: auto;
@@ -263,14 +273,62 @@ body {
 
 .l-main-container h1 {
   position: absolute;
-  top: 220px;
-  left: 5.5%;
+  top: 330px;
+  left: 2.0%;
   margin-left: 6.4%;
   font-family: "mplus 1m";
   font-size: 6rem;
   font-weight: bold;
   color: #FFFFFF;
   vertical-align: middle;
+}
+
+.l-main-container h2 {
+  font-size: 3.6rem;
+  margin-left: 100px;
+}
+
+.l-main-container h3 {
+  font-size: 2.8rem;
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+
+.l-main-container h4 {
+  font-size: 2.0rem;
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+
+.l-main-container p {
+  font-size: 1.6rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 100px;
+}
+
+.l-main-container p a {
+  text-decoration: none;
+}
+
+.l-main-container .wp-block-quote {
+  padding: 50px;
+  margin-bottom: 50px;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  font-weight: 400;
+  background: #f5f5f5;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.l-main-container .wp-block-quote p {
+  margin-left: 0;
+}
+
+.l-main-container .blocks-gallery-grid {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mainVisual-h2 {
@@ -464,7 +522,6 @@ section .title5, .title6 {
 table {
   width: 87.2%;
   height: 305px;
-  margin: 0 6.4% 0;
   border-collapse: collapse;
 }
 
@@ -725,12 +782,102 @@ small {
   }
 }
 
+.editor-styles-wrapper {
+  margin-top: 5%;
+}
+
 .editor-styles-wrapper h2 {
-  font-size: 1.95em;
+  font-size: 4em;
   margin-top: 0.83em;
   margin-bottom: 0.83em;
-  margin-left: auto;
+  margin-left: 5%;
   margin-right: auto;
+}
+
+.editor-styles-wrapper p {
+  font-size: 1.6rem;
+  margin-left: 5%;
+  margin-bottom: 0.83em;
+}
+
+.editor-styles-wrapper h3 {
+  font-size: 3em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 5%;
+  margin-right: auto;
+}
+
+.editor-styles-wrapper h4 {
+  font-size: 2em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 5%;
+  margin-right: auto;
+}
+
+.editor-styles-wrapper-single {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.editor-styles-wrapper-single p {
+  margin-left: 0;
+}
+
+.editor-styles-wrapper-single h2 {
+  margin-left: 0;
+}
+
+.editor-styles-wrapper-single h3 {
+  margin-left: 0;
+}
+
+.editor-styles-wrapper-single h4 {
+  margin-left: 0;
+}
+
+.editor-styles-wrapper-single .wp-block-quote {
+  margin: 0;
+}
+
+.editor-styles-wrapper-single ul li {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  list-style: none;
+}
+
+.editor-styles-wrapper-single ul li ul {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.editor-styles-wrapper-single ol li {
+  margin-top: 20px;
+  margin-left: 50px;
+  font-size: 1.6rem;
+}
+
+.editor-styles-wrapper-single .wp-block-button__link {
+  background-color: #f2ede9;
+  border-radius: 20px;
+  color: #3c2a10;
+  border: solid 1px #707070;
+  padding: 44px 191px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.editor-styles-wrapper-single .wp-block-button__link:visited {
+  color: #3c2a10;
+}
+
+.editor-styles-wrapper-single .wp-block-button__link:hover {
+  color: #3c2a10;
+}
+
+.editor-styles-wrapper-single p {
+  margin-bottom: 100px;
 }
 
 .l-black-screen {
@@ -769,6 +916,45 @@ small {
   }
 }
 
+/*wp-pagenavi 01*/
+.wp-pagenavi {
+  clear: both;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+  color: #707070;
+  border: 1px solid #707070;
+  padding: 8px 15px;
+  margin: 0 2px;
+  white-space: nowrap;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+}
+
+.wp-pagenavi a.previouspostslink {
+  border: none;
+}
+
+.wp-pagenavi a.nextpostslink {
+  border: none;
+}
+
+.wp-pagenavi span.pages {
+  border: none;
+}
+
+.wp-pagenavi span.current {
+  color: #FFF;
+  background-color: #3c2b1c;
+  border-color: #3c2b1c;
+  font-weight: bold;
+}
+
 .mainVisual {
   background-color: #FFFDFA;
 }
@@ -779,7 +965,6 @@ small {
   font-weight: bold;
   color: #3C2A10;
   padding-top: 70px;
-  padding-left: 6.5%;
 }
 
 .mainVisual .mainVisual-text {
@@ -823,16 +1008,15 @@ small {
   font-family: "mplus 1m";
 }
 
-.cheeseburger-container .cheeseburger-container-right h2 {
+.cheeseburger-container .cheeseburger-container-right .archive h2 {
   font-size: 3.6rem;
   line-height: 4.3rem;
   font-weight: bold;
   padding-top: 12.7%;
-  padding-bottom: 12.7%;
   padding-left: 9.3%;
 }
 
-.cheeseburger-container .cheeseburger-container-right h3 {
+.cheeseburger-container .cheeseburger-container-right .archive h3 {
   font-size: 2.4rem;
   line-height: 2.9rem;
   font-weight: bold;
@@ -840,12 +1024,13 @@ small {
   padding-left: 9.3%;
 }
 
-.cheeseburger-container .cheeseburger-container-right p {
+.cheeseburger-container .cheeseburger-container-right .archive p {
   width: 75.2%;
   font-size: 1.6rem;
   line-height: 1.9rem;
   text-align: left;
   padding-left: 9.3%;
+  padding-top: 20px;
 }
 
 .cheeseburger-container .cheeseburger-container-right button {
@@ -919,7 +1104,7 @@ small {
   display: block;
   width: 43.2%;
   height: 76px;
-  color: #707070;
+  color: #707070 !important;
   background: #FFFFFF;
   font-size: 1.6rem;
   margin: 12.7% auto 12.7%;
@@ -986,7 +1171,7 @@ small {
   display: block;
   width: 43.2%;
   height: 76px;
-  color: #707070;
+  color: #707070 !important;
   background: #FFFFFF;
   font-size: 1.6rem;
   margin: 12.7% auto 12.7%;
@@ -1000,7 +1185,6 @@ small {
   .cheeseburger-container .cheeseburger-container-right h2 {
     font-size: 2.0rem;
     padding-top: 33px;
-    padding-bottom: 31px;
   }
   .cheeseburger-container .cheeseburger-container-right h3 {
     font-size: 1.6rem;
@@ -1027,7 +1211,6 @@ small {
 @media (max-width: 710px) {
   .mainVisual h2 {
     padding-top: 36px;
-    padding-bottom: 36px;
   }
   .mainVisual .mainVisual-text {
     padding-top: 0;
@@ -1051,7 +1234,6 @@ small {
     padding-left: 4.5%;
     text-align: left;
     padding-top: 34.5px;
-    padding-bottom: 31px;
   }
   .cheeseburger-container .cheeseburger-container-right h3 {
     padding-left: 5.1%;

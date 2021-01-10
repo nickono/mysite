@@ -1,19 +1,24 @@
 <!-- //header.phpを読み込むテンプレートタグ（インクルードタグ） -->
 <?php get_header(); ?>
 
-        <div class="l-main-container">
+<div class="l-main-container">
             <!-- <img class="lg" src="images/cheese-top.png" alt="Cheese Burger Top">
             <img class="sm" src="images/single-sm.png" alt="Cheese Burger Top"> -->
             <!-- <h1>h1 チーズバーガー</h1>  -->
             <h1><?php the_title(); ?></h1> 
          
-        
+  
         <?php if ( have_posts() ) : ?>
         <?php while ( have_posts() ) : the_post(); ?>
             <?php the_post_thumbnail( $size, $attr ); ?>
-              <p><?php the_content(); ?></p>
+            <div class="editor-styles-wrapper-single">
+              <p <?php post_class('burger'); ?>><?php the_content(); ?></p>
+              <p><?php the_tags(''); ?></p>
+        
+              
     <?php endwhile;?> 
-<?php endif; ?>
+  <?php endif; ?>
+  </div>
 </div>
         <!-- <section>
           <h2>見出しh2</h2>

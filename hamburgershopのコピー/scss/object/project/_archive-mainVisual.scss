@@ -7,7 +7,7 @@
         font-weight: bold;
         color: $c;
         padding-top: 70px;
-        padding-left: 6.5%; 
+        // padding-left: 6.5%; 
       }
 
     .mainVisual-text {
@@ -40,44 +40,37 @@
         width: 43.5%;
         height:   auto;
         background-color: $bgc-brown;
-        // text-align: center;
 
         h2, h3, p {
           color: white;
           font-family: $m;
-          //new addition
-          // text-align: left;
-          
-
         }
 
-        h2 {
+        .archive h2 {
           font-size: 3.6rem;
           line-height: 4.3rem;
           font-weight: bold;
           padding-top: 12.7%;
-          padding-bottom: 12.7%;
+          // padding-bottom: 12.7%;
           padding-left: 9.3%;
         }
 
-        h3 {
+        .archive h3 {
           font-size: 2.4rem;
           line-height: 2.9rem;
           font-weight: bold;
           padding-bottom: 4.7%;
-          //new addition
-          // margin: 0 auto;
-          // text-align: left;
           padding-left: 9.3%;
         } 
 
-        p {
+        .archive p {
           width: 75.2%;
           font-size: 1.6rem;
           line-height: 1.9rem;
           // margin: 0 auto;
           text-align: left;
           padding-left: 9.3%;
+          padding-top: 20px;
         }
 
         button {
@@ -244,7 +237,7 @@
         h2 {
           font-size: 2.0rem;
           padding-top: 33px;
-          padding-bottom: 31px;
+          // padding-bottom: 31px;
         }  
         h3 {
           font-size: 1.6rem;
@@ -303,9 +296,9 @@
         padding-top: 36px;
         // padding-left: 6.5%; 
         // padding-top: 36px;
-        padding-bottom: 36px;
     }
-    .mainVisual-text {
+
+        .mainVisual-text {
       // font-family: $m;
       // font-size: 1.6rem;
       // font-weight: regular;
@@ -336,7 +329,7 @@
         padding-left: 4.5%;
         text-align: left;
         padding-top:  34.5px;
-        padding-bottom:  31px;
+        // padding-bottom:  31px;
       }  
 
       h3 {

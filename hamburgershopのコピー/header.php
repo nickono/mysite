@@ -27,7 +27,6 @@
           </h1>
           <p class="header__descrition"><?php bloginfo( 'description' ); ?></p>
           <?php get_search_form(); ?>
-          <?php //wp_nav_menu(); ?>
         </header>
 
 <!-- bloginfo( 'name') //管理画面の設定 ＞ 一般 にある「サイトのタイトル」を取得して表示

@@ -16,7 +16,7 @@
       display: none;
     }  
     
-    p {
+    p.dummy-site {
         display: table-cell;
         vertical-align: middle;
         color: #FFFFFF;
@@ -25,8 +25,10 @@
         position: absolute;
         top: calc(50% - 20px);
         left: 86px;
+        margin-top: 0;
+        margin-left: 0;
       }
-  }
+}
 
 
   /*  PC_archive  */
@@ -41,10 +43,6 @@
     width: 100%;
     height: 239px;
   }
-
-  // img.middeum-archive {
-  //   display: none;
-  // }
 
   img.sm {
     display: none;
@@ -72,8 +70,14 @@
   }
 }
 
-// PC_single
+.cheeseburger-container .cheeseburger-container-right button a.detail {
+    text-decoration: none;
+  }
+
+
+// PC_single & page
 .l-main-container {
+  // margin-left: 100px;
 //     background-color: skyblue;
 //     width: 100%;
 //     height: 500px;
@@ -93,9 +97,20 @@
   } 
 
   h1 {
+      // position: absolute;
+      // top: 220px;
+      // left: 5.5%;
+      // margin-left: 6.4%;
+      // font-family: "mplus 1m";
+      // font-size: 6rem;
+      // font-weight: bold;
+      // color: #FFFFFF;
+      // vertical-align: middle;
+
       position: absolute;
-      top: 220px;
-      left: 5.5%;
+      top: 330px;
+      // left: 5.5%;
+      left: 2.0%;
       margin-left: 6.4%;
       font-family: "mplus 1m";
       font-size: 6rem;
@@ -103,7 +118,91 @@
       color: #FFFFFF;
       vertical-align: middle;
   }
-}
+
+  h2 {
+    font-size: 3.6rem;
+    // margin-bottom: 30px;
+    margin-left: 100px; 
+  } 
+
+  h3  {
+    font-size: 2.8rem;
+    margin-left: 100px; 
+    margin-bottom: 30px;
+  }
+
+  h4 {
+    font-size: 2.0rem;
+    margin-left: 100px; 
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 1.6rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 100px; 
+  }
+
+  p a {
+    text-decoration: none;
+  }
+
+  .wp-block-quote {
+    padding: 50px;
+    margin-bottom: 50px;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    font-weight: 400;
+    background: #f5f5f5;  
+    margin-left: 100px;
+    margin-right: 100px;
+
+    p {
+      margin-left: 0;
+    }
+  }
+
+  // img.wp-image-185
+  // img.wp-image-185 {
+  //   display: inline-block;
+  //   margin: 0 auto;
+    // .wp-block-gallery {
+  // .wp-block-gallery.columns-1.is-cropped {
+
+
+  //   figure.wp-block-gallery.columns-1.is-cropped {
+  //     text-align: center;
+  //     ul.blocks-gallery-grid {
+  //       display: inline-block;
+  //       li.blocks-gallery-item {
+  //         display: inline-block;
+  //         figure {
+  //           display: inline-block;
+  //           img.wp-image-185 {
+  //             display: inline-block;
+  //             margin: 0 auto;
+  //         }
+  //       }  
+  //     }
+  //   }
+  // }
+
+  // li.blocks-gallery-item figure {
+    // .wp-block-gallery.columns-1.is-cropped {
+    // width: 100%;
+    // text-align: center;
+    // display: flex;
+    // align-items: center;
+    // margin-left: auto;
+    // margin-right: auto;
+
+    .blocks-gallery-grid {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+// }
 
 .mainVisual-h2 {
   margin-top: 67px;
@@ -306,7 +405,7 @@ section .title5, .title6 {
 table {
   width: 87.2%;
   height: 305px;
-  margin: 0 6.4% 0;
+  // margin: 0 6.4% 0;
   border-collapse: collapse;
 
   td {

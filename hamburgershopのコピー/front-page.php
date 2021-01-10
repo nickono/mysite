@@ -6,7 +6,7 @@
           <div class="p-topimage-container">
             <img class="toppage-lg" src="<?php echo get_template_directory_uri(); ?>/images/Top.jpg" />
             <img class="toppage-sm" src="<?php echo get_template_directory_uri(); ?>/images/toppage-sm.png" />
-            <p>ダミーサイト</p>
+            <p class="dummy-site">ダミーサイト</p>
           </div>
         </div>  
         <div class="p-takeout-eatin-container">
