@@ -5,6 +5,10 @@
     // padding-left: 46px;
     padding-left: 2%;
 
+    :any-link {
+      color: $c;
+    }
+
     #my-cross {
         display: none;
       } 
@@ -87,14 +91,18 @@
     
     .l-sidebar-container {
         display: none;
+        position: relative;
 
         #my-cross {
             display: block;
             color: #707070;
             float: right;
-            margin-top: 25px;
-            margin-right: 25px;  
+            // margin-top: 25px;
+            // margin-right: 25px;  
             z-index: 100;
+            position: absolute;
+            top: 25px;
+            right: 25px;
           }
          
         .burger {

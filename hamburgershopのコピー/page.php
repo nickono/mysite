@@ -7,6 +7,7 @@
           <!-- <h1>ショップについて</h1>  -->
           <h1><?php the_title(); ?></h1> 
         </div>
+        <div class="editor-styles-wrapper-page">
 
     <?php
         if( have_posts() ) ://1.投稿データがあるかの条件分岐。
@@ -22,7 +23,7 @@
     <p>表示する記事がありません</p><!-- 7.ない時の処理 -->
     <?php endif; ?><!-- 8.条件分岐終了 -->  
 
-
+        </div>
 
               
           <!-- <section>
