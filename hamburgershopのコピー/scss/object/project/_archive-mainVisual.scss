@@ -1,3 +1,4 @@
+//front-page
 .mainVisual {
     background-color: $bgc-white;
 
@@ -28,6 +29,10 @@
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
+    //new
+    // flex-direction:row ;
+    // font-size: 0;
+    // margin: initial;
 
     img {
         width: 43.5%;
@@ -40,6 +45,10 @@
         width: 43.5%;
         height:   auto;
         background-color: $bgc-brown;
+        // display: flow-root;
+        // margin-bottom: 0 !important;
+        // font-size: 0;
+        // margin: initial;
 
         h2, h3, p {
           color: white;
@@ -80,7 +89,7 @@
           color: $c-menu;
           background: #FFFFFF;
           font-size: 1.6rem;
-          margin: 12.7% auto 12.7%;
+          margin: 7.0% auto 10.0%;
           border-radius: 38px;;
         }
       }      

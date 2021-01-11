@@ -48,7 +48,11 @@
           </div>  
         </div>
         <div class="p-map-container">
-          <img class="p-map" src="<?php echo get_template_directory_uri(); ?>/images/map.png">
+          <!-- <img class="p-map" src="<?php echo get_template_directory_uri(); ?>/images/map.png"> -->
+          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.747975472317!2d139.7432388508119!3d35.65858048010234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481a93f0d2a409dd!2z5p2x5Lqs44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1610330175981!5m2!1sja!2sjp" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.747975472317!2d139.7432388508119!3d35.65858048010234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481a93f0d2a409dd!2z5p2x5Lqs44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1610330574474!5m2!1sja!2sjp" width="1553" height="649" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.747975472317!2d139.7432388508119!3d35.65858048010234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481a93f0d2a409dd!2z5p2x5Lqs44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1610330574474!5m2!1sja!2sjp" width="1100" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+          <iframe class ="p-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.747975472317!2d139.7432388508119!3d35.65858048010234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481a93f0d2a409dd!2z5p2x5Lqs44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1610331173949!5m2!1sja!2sjp" width="1200" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           <div class="p-info-container">
             <!-- <img class="p-info-inner" src="images/background-gray.png"> -->
             <p>見出しが入ります<br>____</p>
