@@ -19,6 +19,7 @@
             padding-left: 9.3%;
             padding-top: 20px;
         }
+        
     .excerpt {
         font-size: 1.6rem;
         line-height: 1.9rem;
@@ -36,4 +37,10 @@
             color: white;
         }
     }
+}
+
+.not-found {
+    margin-top: 50px;
+    margin-left: 100px;
+    color: $c-menu;
 }

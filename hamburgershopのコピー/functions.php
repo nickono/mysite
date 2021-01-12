@@ -20,7 +20,6 @@
         wp_enqueue_style( 'mplus1p', '//mplus-webfonts.sourceforge.jp/mplus-1m-regular.ttf', array() );
         wp_enqueue_style( 'font-awesome', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0' );
         wp_enqueue_style( 'reset', '//unpkg.com/ress/dist/ress.min.css', array() );
-        // wp_enqueue_style( 'hamburgershop', get_template_directory_uri() . '/css/hamburgershop.css', array(), '1.0.0' );
         wp_enqueue_style( 'style', get_template_directory_uri() . '/css/style.css', array(), '1.0.0' );
         wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', "", "3.5.1", true );
         wp_enqueue_script( 'toggle', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true );

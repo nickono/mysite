@@ -1,12 +1,14 @@
 .l-footer-container {
     color:white;
-    // height: 150px;
     height: auto;
     width: 100%;
     background-color: #9D8670;
     font-size: 20px;
     text-align: center;
-    // margin-top: 100px;
+
+    .shop-info, .history {
+        color: white;
+    }
 
     p {
         padding-top: 43px;
@@ -20,8 +22,11 @@
     .copyright {
         margin-left: 0;
         color: #FFFFFF;
+        font-size: 1.4rem;
+        font-weight: normal;
     }  
   }
+
 
   @include md {
       .copyright {

@@ -1,38 +1,38 @@
-<!-- search.php 抜粋 -->
 <?php get_header(); ?>
 
+    <section class="p-3-burgers-container">
+        <img class="lg" src="<?php echo get_template_directory_uri(); ?>/images/3-burgers.png">
+        <img class="sm" src="<?php echo get_template_directory_uri(); ?>/images/archive-topimage.png">
+        <h2>Search: 
+            <span class="span-lg">
+                <!-- 検索ワードを出力 -->
+                <?php the_search_query(); ?>
+            </span>
+            <span  class="span-sm">
+                <br><?php the_search_query(); ?>
+            </span>
+        </h2> 
+    </section>  
 <div id="contents">
- 
-<div class="search_results">
-<?php if(have_posts()): ?>
-<!-- 検索ワードを出力 -->
-<h2>検索結果：「<?php the_search_query(); ?>」</h2>
- 
-
-
-<?php while(have_posts()): the_post(); ?>
-    <div class="cheeseburger-container">
-      <?php the_post_thumbnail( $size, $attr ); ?>
-      <div class="cheeseburger-container-right">
-<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-<p class="date"><?php echo get_the_date(); ?></p>
-<div class="excerpt">
-<?php the_excerpt(); ?>
-<p><a href="<?php the_permalink(); ?>">続きを読む</a></p>
-</div><!-- end of .excerpt -->
-</div> 
-    </div>
-<?php endwhile; ?>
-<!-- 検索ワードに該当する記事がない場合の処理-->
-<?php else: ?>
-<!-- 検索ワードを出力-->
-<h2>「<span><?php the_search_query(); ?></span>」の検索結果が見つかりませんでした。</h2>
-<p>別のキーワードでお試しください。</p>
-<!-- 検索フォームを表示-->
-<?php get_search_form(); ?>
-<?php endif;  ?>
-</div><!-- end of .search_results -->
-
+    <div class="search_results">
+        <?php if(have_posts()): ?> 
+        <?php while(have_posts()): the_post(); ?>
+            <div class="cheeseburger-container">
+                <?php the_post_thumbnail( $size, $attr ); ?>
+                <div class="cheeseburger-container-right">
+                <section id="post-<?php the_ID(); ?>" <?php post_class( 'archive' ); ?>>
+                    <h2><?php the_title(); ?></h2>
+                    <?php the_excerpt(); ?>
+                </section>  
+                    <button><a class="detail" href="<?php echo get_page_link( ); ?>">詳しく見る</a></button>
+                </div> 
+            </div>
+        <?php endwhile; ?>
+        <!-- 検索ワードに該当する記事がない場合の処理-->
+        <?php else: ?>
+            <h2 class="not-found">検索結果が見つかりませんでした</h2>
+        <?php endif;  ?>
+    </div><!-- end of .search_results -->
 </div><!-- end of #content -->
 
 <?php wp_pagenavi(); ?>

@@ -17,12 +17,5 @@
         <?php endwhile;
     else :
         ?><p>表示する記事がありません</p><?php
-    endif;
-?>
+    endif;?>
 
-<?php if ( $wp_query -> max_num_pages > 1 ) : ?> //ページ数が1を超える場合に処理
-    <ul class="p-pagenation">
-        <li class="prevpostslink"><?php next_posts_link( 'Prev' ); ?></li>
-        <li class="prevpostslink"><?php previous_posts_link( 'Next' ); ?></li>
-    </ul>
-<?php endif; ?>

@@ -7,7 +7,9 @@
 
     a, span {
         // color: #795A3C;
-        color: #707070;
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: $c-menu;
         // background-color: #FFF1DA;
         // border: 1px solid #DBC9AA;
         border: 1px solid #707070;
@@ -27,10 +29,12 @@
 
         a.previouspostslink {
             border: none;
+            font-weight: bold;
         }
 
         a.nextpostslink {
             border: none;
+            font-weight: bold; 
         }
         // a:hover{
         //     color: #FFF;
