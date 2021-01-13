@@ -1,3 +1,16 @@
+/*
+  Theme Name:     hamburgershop
+  Description:    the website of a hamburger shop //テーマの説明
+  Version:        1.0.0 //バージョン
+  Theme URI:      https://github.com/nickono/mysite.git
+  Author:         Nick
+  Author URI:     https://nicknoblog.com
+  License:        GPL //ライセンス（WordPressのテーマやプラグインを公開して配布する場合、ライセンスはGPLになります。）
+  License URI:    https://www.gnu.org/ //ライセンスの URL
+  Text Domain:    hamburgershop //テキストドメイン（翻訳させたい箇所を指示する際に使います。テーマディレクトリ名を入れます。）
+*/
+
+
 html {
   font-size: 62.5%;
 }
@@ -1418,3 +1431,42 @@ small {
   }
 }
 /*# sourceMappingURL=style.css.map */
+/* .wp-caption {
+  font-family: $m;
+}
+
+.wp-caption-text {
+  font-family: $m;
+}
+
+.sticky {
+  font-family: $m;
+} */
+
+/* .gallery-caption {
+  font-family: $m;
+} */
+
+/* .bypostauthor {
+  font-family: $m;
+} */
+
+/* .alignright {
+  font-family: $m;
+} */
+
+/* .alignleft {
+  font-family: $m;
+} */
+
+/* .aligncenter {
+  font-family: $m;
+} */
+
+/* .screen-reader-text {
+  font-family: $m;
+} */
+
+/* Tested up to: 5.0; */
+
+/* Requires PHP: 7.3.5 */

@@ -15,11 +15,13 @@
         .p-h2title {
             position: absolute;
             top: 5%;
-            left: 10%;
+            left: 5%;
             color: #EAEAEA;
             font-weight: bold;
             font-family: Robote;
-            font-size: 8rem;
+            // font-size: 8rem;
+            // font-size: 6.7vw;
+            font-size: 5.0vw;
         }
 
         img {
@@ -102,11 +104,14 @@
         .p-h2title {
             position: absolute;
             top: 5%;
-            left: 10%;
+            // left: 10%;
+            left: 5%;
             color: #EAEAEA;
             font-weight: bold;
             font-family: Robote;
-            font-size: 8rem;
+            // font-size: 8rem;
+            // font-size: 6.7vw;
+            font-size: 5.0vw;
           }
           
 
@@ -207,32 +212,46 @@
 
         p {
             position: absolute;
-            top: 90px;
+            // top: 90px;
+            top: 50px;
             left: 7.7%;
             color: white;
-            font-size: 3.6rem;
+            // font-size: 3.6rem;
+            font-size: 4.5vw;
             font-weight: bold;
           }
 
         .p-text {
             position: absolute;
-            top: 253px;
+            // top: 253px;
+            top: 250px;
             left: 7.7%;
             color: white;
             font-size: 1.4rem;
             font-weight: bold;
             line-height: 3.3rem;
             width: 73.4%;
-            height: 18%;
+            // height: 18%;
+            height: auto;
             max-height: 380px;
+            overflow: hidden;
         }  
       }   
   }
 
     @include md {  
     .p-map-container {    
+
         .p-info-container {
             width: 100%;
+
+            p {
+                font-size: 3.6rem;
+            }
+
+            .p-text {
+                top: 200px;
+            }
         }
     }    
 }
@@ -262,11 +281,12 @@
                 left: 0;
                 margin-top: 46px; 
                 margin-left: 11.2%;
+                font-size: 3.6rem;
             }
 
             .p-text {
                 position: absolute;
-                top: 170px;
+                top: 200px;
                 left: 11.2%;
                 width: 78.7%;
             }

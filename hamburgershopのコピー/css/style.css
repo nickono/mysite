@@ -88,13 +88,11 @@ body {
 
 .l-header-container .header__ttl a {
   font-family: Roboto;
-  font-size: 6rem;
+  font-size: 5.0vw;
   color: #707070;
-  padding-left: 4.2%;
-  padding-top: 40px;
-  padding-bottom: 38px;
-  text-align: center;
+  padding-left: 7.0%;
   text-decoration: none;
+  vertical-align: middle;
 }
 
 .l-header-container .p-search-form {
@@ -112,6 +110,7 @@ body {
   background-color: #FFFFFF;
   font-size: 3rem;
   font-family: FontAwesome;
+  padding: 3px 7px;
 }
 
 .l-header-container .p-search-form .p-search-button {
@@ -135,23 +134,23 @@ body {
     -webkit-box-pack: none;
         -ms-flex-pack: none;
             justify-content: none;
-    height: 217px;
+    height: 250px;
+    text-align: center;
+    padding-top: 50px;
   }
-  .l-header-container .h1title {
+  .l-header-container .header__ttl a {
     font-family: Roboto;
-    font-size: 6rem;
+    font-size: 4.0rem;
     color: #707070;
     padding-left: 0;
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 38px;
+    padding-top: 0;
+    text-decoration: none;
   }
   .l-header-container #h2title {
-    float: right;
-    margin-top: 18px;
-    margin-right: 3.1%;
+    top: 18px;
+    left: 86.0%;
     font-family: "Roboto";
-    font-size: 3.6rem;
+    font-size: 3.4rem;
     line-height: 4.5rem;
     font-weight: bold;
     color: #EBE7E7;
@@ -163,6 +162,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     padding-bottom: 40px;
+    padding-top: 40px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -188,8 +188,8 @@ body {
 @media (max-width: 710px) {
   .l-header-container #h2title {
     position: absolute;
-    top: 14px;
-    left: 82.1%;
+    top: 18px;
+    left: 87%;
   }
   .l-header-container .p-search-container {
     width: 100%;
@@ -202,6 +202,9 @@ body {
   .l-header-container .p-search-container .p-search-button {
     width: 24.4%;
     margin-right: 0;
+  }
+  .l-header-container #h2title {
+    font-size: 2.0rem;
   }
   .p-3-burgers-container h2 {
     display: none;
@@ -228,11 +231,11 @@ body {
   display: table-cell;
   vertical-align: middle;
   color: #FFFFFF;
-  font-family: "M PLUS 1p";
-  font-size: 4rem;
+  font-family: "mplus 1m";
+  font-size: 4.5vw;
   font-weight: bold;
   position: absolute;
-  top: calc(50% - 20px);
+  top: 35%;
   left: 86px;
   margin-top: 0;
   margin-left: 0;
@@ -250,6 +253,8 @@ body {
   opacity: 0.9;
   width: 100%;
   height: 239px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-3-burgers-container img.sm {
@@ -258,11 +263,11 @@ body {
 
 .p-3-burgers-container h2 {
   font-family: Roboto;
-  font-size: 6rem;
+  font-size: 5.0vw;
   font-weight: bold;
   color: #FFFFFF;
   position: absolute;
-  top: 80px;
+  top: 30%;
   left: 86px;
 }
 
@@ -299,7 +304,7 @@ body {
   left: 2.0%;
   margin-left: 6.4%;
   font-family: "mplus 1m";
-  font-size: 6rem;
+  font-size: 5.0vw;
   font-weight: bold;
   color: #FFFFFF;
   vertical-align: middle;
@@ -602,6 +607,8 @@ small {
   }
   .p-3-burgers-container img.lg {
     height: 283px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .p-3-burgers-container img.sm {
     display: none;
@@ -611,17 +618,21 @@ small {
     margin-left: 0;
     top: 102px;
     left: 10.3%;
+    font-size: 5.0rem;
   }
-  .Blockquote {
+  .l-main-container h1 {
+    font-size: 5.0rem;
+  }
+  .l-main-container .Blockquote {
     padding-bottom: 61px;
   }
-  .p-cheese-bottom-container-first p {
+  .l-main-container .p-cheese-bottom-container-first p {
     height: 373px;
   }
-  button {
+  .l-main-container button {
     width: 51.4%;
   }
-  small {
+  .l-main-container small {
     margin-bottom: 71px;
   }
 }
@@ -642,6 +653,9 @@ small {
   .p-3-burgers-container img.sm {
     display: block;
     height: 283px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    overflow: hidden;
   }
   .p-3-burgers-container img.lg {
     display: none;
@@ -664,7 +678,7 @@ small {
     display: block;
   }
   .l-main-container h1 {
-    font-size: 3.6rem;
+    font-size: 5.0rem;
   }
   section h2 {
     font-size: 2.8rem;
@@ -1080,6 +1094,8 @@ small {
   height: auto;
   margin-left: 0;
   padding-left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .cheeseburger-container .cheeseburger-container-right {
@@ -1447,11 +1463,11 @@ small {
 .p-takeout-eatin-container .takeout-container .p-h2title {
   position: absolute;
   top: 5%;
-  left: 10%;
+  left: 5%;
   color: #EAEAEA;
   font-weight: bold;
   font-family: Robote;
-  font-size: 8rem;
+  font-size: 5.0vw;
 }
 
 .p-takeout-eatin-container .takeout-container img {
@@ -1534,11 +1550,11 @@ small {
 .p-takeout-eatin-container .eatin-container .p-h2title {
   position: absolute;
   top: 5%;
-  left: 10%;
+  left: 5%;
   color: #EAEAEA;
   font-weight: bold;
   font-family: Robote;
-  font-size: 8rem;
+  font-size: 5.0vw;
 }
 
 .p-takeout-eatin-container .eatin-container img {
@@ -1635,29 +1651,36 @@ small {
 
 .p-map-container .p-info-container p {
   position: absolute;
-  top: 90px;
+  top: 50px;
   left: 7.7%;
   color: white;
-  font-size: 3.6rem;
+  font-size: 4.5vw;
   font-weight: bold;
 }
 
 .p-map-container .p-info-container .p-text {
   position: absolute;
-  top: 253px;
+  top: 250px;
   left: 7.7%;
   color: white;
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 3.3rem;
   width: 73.4%;
-  height: 18%;
+  height: auto;
   max-height: 380px;
+  overflow: hidden;
 }
 
 @media (max-width: 1100px) {
   .p-map-container .p-info-container {
     width: 100%;
+  }
+  .p-map-container .p-info-container p {
+    font-size: 3.6rem;
+  }
+  .p-map-container .p-info-container .p-text {
+    top: 200px;
   }
 }
 
@@ -1682,10 +1705,11 @@ small {
     left: 0;
     margin-top: 46px;
     margin-left: 11.2%;
+    font-size: 3.6rem;
   }
   .p-map-container .p-info-container .p-text {
     position: absolute;
-    top: 170px;
+    top: 200px;
     left: 11.2%;
     width: 78.7%;
   }

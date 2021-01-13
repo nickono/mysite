@@ -14,6 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    // padding-top: 50px;
 
     #h2title {
         font-family: Roboto;
@@ -22,17 +23,22 @@
         position: absolute;
         top: 82px;
         left: 86.0%;
+        // right: 7.0%;
+        // right: 50px;
     }
 
     .header__ttl a {
       font-family: Roboto;
-      font-size: 6rem;
+      // font-size: 6rem;
+      font-size: 5.0vw;
       color: #707070;
-      padding-left: 4.2%;
-      padding-top: 40px;
-      padding-bottom: 38px;
-      text-align: center;
+      // padding-left: 4.2%;
+      padding-left: 7.0%;
+      // padding-top: 40px;
+      // padding-bottom: 38px;
+      // text-align: center;
       text-decoration: none;
+      vertical-align: middle;
     }
 
     .p-search-form {
@@ -47,6 +53,7 @@
         background-color: #FFFFFF;
         font-size: 3rem;
         font-family: FontAwesome;
+        padding: 3px 7px;
       }
       
       .p-search-button {
@@ -73,25 +80,26 @@
   .l-header-container {
     display: block;
     justify-content: none;
-    // height: 100%;
-    height: 217px;
+    height: 250px;
+    text-align: center;
+    padding-top: 50px;
     
-    .h1title {
+    .header__ttl a {
       font-family: Roboto;
-      font-size: 6rem;
+      // font-size: 3.6rem;
+      font-size: 4.0rem;
       color: #707070;
       padding-left: 0;
-      text-align: center;
-      padding-top: 40px;
-      padding-bottom: 38px;
+      padding-top: 0;
+      text-decoration: none;
     }
 
     #h2title { 
-      float: right;
-      margin-top: 18px;
-      margin-right: 3.1%;
+      top:  18px;
+      left: 86.0%;
       font-family: "Roboto";
-      font-size: 3.6rem;
+      // font-size: 3.6rem;
+      font-size: 3.4rem;
       line-height: 4.5rem;
       font-weight: bold;
       color: $c-menu-res;
@@ -103,38 +111,9 @@
       // display: block;
       display: flex;
       padding-bottom: 40px;
+      padding-top: 40px;
       // text-align: center;
       justify-content: center;
-
-      // .p-searchbox {
-      //   border: solid 1px black;
-      //   width: 396px;
-      //   height: 46px;
-      //   border-radius: 10px;
-      //   background-color: #FFFFFF;
-      //   display: inline-block;
-      //   text-align: left;
-      //   vertical-align: middle;
-      //   position: relative; 
-
-      // .search {
-      //   border: solid 1px black;
-      //   width: 396px;
-      //   height: 46px;
-      //   border-radius: 10px;
-      //   background-color: #FFFFFF;
-      //   display: inline-block;
-      //   text-align: left;
-      //   vertical-align: middle;
-        // position: relative; 
-
-        // .my-icon {
-        //   font-size: 3rem;
-        //   position: absolute;
-        //   top: 6px;
-        //   left: 6px;
-        // }
-      
 
       .p-search-button {
         width: 136px;
@@ -163,8 +142,10 @@
 
     #h2title {
       position: absolute;
-      top: 14px;
-      left: 82.1%;
+      top: 18px;
+      left: 87%;
+      // left: 82.1%;
+      // right: 50px;
     }
 
     .p-search-container {
@@ -184,6 +165,12 @@
   }  
 
   // archive
+  .l-header-container {
+    #h2title {
+      font-size: 2.0rem;
+    }
+  }
+
   .p-3-burgers-container {
     h2 {
       display: none;
