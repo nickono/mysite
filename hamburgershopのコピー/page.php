@@ -2,9 +2,8 @@
 <?php get_header(); ?>
 
     <div class="l-main-container">
-        <img class="lg" src="<?php echo get_template_directory_uri(); ?>/images/PC_page-top.png" alt="PC_page-top-image">
-        <img class="sm" src="<?php echo get_template_directory_uri(); ?>/images/page-top-sm.png" alt="PC_page-top-image">
-        <!-- <h1>ショップについて</h1>  -->
+        <img class="lg" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/PC_page-top.png" alt="PC_page-top-image">
+        <img class="sm" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/page-top-sm.png" alt="PC_page-top-image">
         <h1><?php the_title(); ?></h1> 
     </div>
     <div class="editor-styles-wrapper-page">
@@ -22,8 +21,6 @@
         ?>
         <p>表示する記事がありません</p><!-- 7.ない時の処理 -->
         <?php endif; ?><!-- 8.条件分岐終了 -->  
-
-    <!-- </div> -->
       
 </main>  
 

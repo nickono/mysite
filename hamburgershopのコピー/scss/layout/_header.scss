@@ -3,10 +3,6 @@
   color: $c;
 }
 
-// * {
-//     padding-bottom: 0px;
-// }
-
 .l-header-container {
     background-color: #FFF7EF;
     width: 100%;
@@ -14,7 +10,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // padding-top: 50px;
 
     #h2title {
         font-family: Roboto;
@@ -23,20 +18,13 @@
         position: absolute;
         top: 82px;
         left: 86.0%;
-        // right: 7.0%;
-        // right: 50px;
     }
 
     .header__ttl a {
       font-family: Roboto;
-      // font-size: 6rem;
-      font-size: 5.0vw;
+      font-size: 6.0rem;
       color: #707070;
-      // padding-left: 4.2%;
       padding-left: 7.0%;
-      // padding-top: 40px;
-      // padding-bottom: 38px;
-      // text-align: center;
       text-decoration: none;
       vertical-align: middle;
     }
@@ -86,8 +74,7 @@
     
     .header__ttl a {
       font-family: Roboto;
-      // font-size: 3.6rem;
-      font-size: 4.0rem;
+      font-size: calc(50px + ((1vw - 7.1px) * 2.5));
       color: #707070;
       padding-left: 0;
       padding-top: 0;
@@ -98,7 +85,6 @@
       top:  18px;
       left: 86.0%;
       font-family: "Roboto";
-      // font-size: 3.6rem;
       font-size: 3.4rem;
       line-height: 4.5rem;
       font-weight: bold;
@@ -108,11 +94,9 @@
     }
 
     .p-search-form {
-      // display: block;
       display: flex;
       padding-bottom: 40px;
       padding-top: 40px;
-      // text-align: center;
       justify-content: center;
 
       .p-search-button {
@@ -139,13 +123,14 @@
 @include sm {
   // front page
   .l-header-container {
+    .header__ttl a {
+      font-size: 5.0rem;
+    }
 
     #h2title {
       position: absolute;
       top: 18px;
       left: 87%;
-      // left: 82.1%;
-      // right: 50px;
     }
 
     .p-search-container {

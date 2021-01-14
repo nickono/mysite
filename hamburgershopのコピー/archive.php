@@ -2,8 +2,8 @@
 <?php get_header(); ?>
 
     <section class="p-3-burgers-container">
-        <img class="lg" src="<?php echo get_template_directory_uri(); ?>/images/3-burgers.png">
-        <img class="sm" src="<?php echo get_template_directory_uri(); ?>/images/archive-topimage.png">
+        <img class="lg" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/3-burgers.png">
+        <img class="sm" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/archive-topimage.png">
         <h2>Menu: 
             <span class="span-lg">
                 <?php single_cat_title( '', true ); ?>
@@ -34,6 +34,8 @@
           </div> 
         </div>
     <?php endwhile;?>
+    <!-- <?php posts_nav_link(); ?> -->
+    <?php wp_link_pages(); ?>
 <?php endif; ?>
   
 <?php wp_pagenavi(); ?>

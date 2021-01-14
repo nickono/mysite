@@ -7,7 +7,7 @@
   Author URI:     https://nicknoblog.com
   License:        GPL //ライセンス（WordPressのテーマやプラグインを公開して配布する場合、ライセンスはGPLになります。）
   License URI:    https://www.gnu.org/ //ライセンスの URL
-  Text Domain:    hamburgershop //テキストドメイン（翻訳させたい箇所を指示する際に使います。テーマディレクトリ名を入れます。）
+  Text Domain:    hamburgershop 
 */
 
 
@@ -1431,25 +1431,28 @@ small {
   }
 }
 /*# sourceMappingURL=style.css.map */
-/* .wp-caption {
-  font-family: $m;
+
+.wp-caption {
+  font-size: 1.3rem
 }
 
 .wp-caption-text {
-  font-family: $m;
+  margin-top: -20px;
 }
 
 .sticky {
-  font-family: $m;
-} */
+  padding: 20px;
+  background: #f3f3f3;
+}
 
-/* .gallery-caption {
-  font-family: $m;
-} */
+.gallery-caption {
+  font-size: 1.3rem;
+}
 
-/* .bypostauthor {
-  font-family: $m;
-} */
+.bypostauthor {
+  padding: 20px;
+  background: #f0f8ff;
+}
 
 /* .alignright {
   font-family: $m;
@@ -1470,3 +1473,11 @@ small {
 /* Tested up to: 5.0; */
 
 /* Requires PHP: 7.3.5 */
+
+/* posts_nav_link() */
+
+/* <?php echo get_avatar( $id_or_email, $size, $default, $alt, $args ); ?> */
+
+/* if ( ! isset( $content_width ) ) $content_width = 900; */
+
+/* wp_link_pages <?php wp_link_pages( $args ); ?> */

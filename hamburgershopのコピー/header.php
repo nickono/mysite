@@ -6,6 +6,7 @@
         <?php wp_head(); ?> 
     </head>
     <body <?php body_class(); ?>>
+    <?php wp_body_open(); ?>
         <div class="l-largest-wrapper">
             <div class="l-black-screen"></div>
             <main class="l-main-wrapper"> 

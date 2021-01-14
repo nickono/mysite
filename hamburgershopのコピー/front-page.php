@@ -4,8 +4,8 @@
     <div class="l-main-container">
         <h2 class="p-h2title"></h2>
         <div class="p-topimage-container">
-            <img class="toppage-lg" src="<?php echo get_template_directory_uri(); ?>/images/Top.jpg" />
-            <img class="toppage-sm" src="<?php echo get_template_directory_uri(); ?>/images/toppage-sm.png" />
+            <img class="toppage-lg" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/Top.jpg" />
+            <img class="toppage-sm" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/toppage-sm.png" />
             <p class="dummy-site">ダミーサイト</p>
         </div>
     </div>  
@@ -13,7 +13,7 @@
         <div class="takeout-container">
             <a href="<?php echo get_category_link(5); ?>">
             <h2 class="p-h2title">Take Out<br>__</h2>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png" />
             <div class="p-info1-container">
                 <p>小見出しが入ります</p>
                 <div class="p-info1-text">
@@ -29,9 +29,9 @@
             </a>
         </div>
         <div class="eatin-container">
-            <a href="<?php echo get_category_link(4); ?>">
+            <a href="<?php echo esc_url(get_category_link(4)); ?>">
             <h2 class="p-h2title">Eat In<br>__</h2>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/EatIn.png">
+            <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/EatIn.png">
             <div class="p-info3-container">
                 <p>小見出しが入ります</p>
                 <div class="p-info3-text">

@@ -1,5 +1,4 @@
 .p-takeout-eatin-container {
-    // width: 81%;
     width: 100%;
     background-color: #FFFDFA;
     display: flex;
@@ -19,9 +18,7 @@
             color: #EAEAEA;
             font-weight: bold;
             font-family: Robote;
-            // font-size: 8rem;
-            // font-size: 6.7vw;
-            font-size: 5.0vw;
+            font-size: 5.0rem;
         }
 
         img {
@@ -104,14 +101,11 @@
         .p-h2title {
             position: absolute;
             top: 5%;
-            // left: 10%;
             left: 5%;
             color: #EAEAEA;
             font-weight: bold;
             font-family: Robote;
-            // font-size: 8rem;
-            // font-size: 6.7vw;
-            font-size: 5.0vw;
+            font-size: 5.0rem;
           }
           
 
@@ -193,7 +187,6 @@
     background-color:#000000;
     position: relative;
 
-    // img {
     .p-map {  
         width: 100%;
         height: 60rem;
@@ -208,22 +201,17 @@
         height: 100%;
         background-color: rgba(0,0,0,0.3);
         
-
-
         p {
             position: absolute;
-            // top: 90px;
             top: 50px;
             left: 7.7%;
             color: white;
-            // font-size: 3.6rem;
-            font-size: 4.5vw;
+            font-size: 5.0rem;
             font-weight: bold;
           }
 
         .p-text {
             position: absolute;
-            // top: 253px;
             top: 250px;
             left: 7.7%;
             color: white;
@@ -231,7 +219,6 @@
             font-weight: bold;
             line-height: 3.3rem;
             width: 73.4%;
-            // height: 18%;
             height: auto;
             max-height: 380px;
             overflow: hidden;
@@ -240,13 +227,25 @@
   }
 
     @include md {  
+.p-takeout-eatin-container {
+    .takeout-container {
+        .p-h2title {
+            font-size: calc(40px + ((1vw - 7.1px) * 2.5));
+        }
+    }
+    .eatin-container {
+        .p-h2title {
+            font-size: calc(40px + ((1vw - 7.1px) * 2.5));
+        }
+    }
+}
     .p-map-container {    
 
         .p-info-container {
             width: 100%;
 
             p {
-                font-size: 3.6rem;
+                font-size: calc(40px + ((1vw - 7.1px) * 2.5));
             }
 
             .p-text {
@@ -263,11 +262,19 @@
         .takeout-container {
             width: 90%;
             margin: 120px auto 0;
+
+            .p-h2title {
+                font-size: 4.0rem;
+            }
         }
 
         .eatin-container {
             width: 90%;
             margin: 120px auto 0;
+
+            .p-h2title {
+                font-size: 4.0rem;
+            }
         }
     }
 
@@ -281,7 +288,7 @@
                 left: 0;
                 margin-top: 46px; 
                 margin-left: 11.2%;
-                font-size: 3.6rem;
+                font-size: 4.0rem;
             }
 
             .p-text {

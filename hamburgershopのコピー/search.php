@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
     <section class="p-3-burgers-container">
-        <img class="lg" src="<?php echo get_template_directory_uri(); ?>/images/3-burgers.png">
-        <img class="sm" src="<?php echo get_template_directory_uri(); ?>/images/archive-topimage.png">
+        <img class="lg" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/3-burgers.png">
+        <img class="sm" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/archive-topimage.png">
         <h2>Search: 
             <span class="span-lg">
                 <!-- 検索ワードを出力 -->

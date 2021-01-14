@@ -6,19 +6,13 @@
     padding-bottom: 50px;
 
     a, span {
-        // color: #795A3C;
         font-size: 1.6rem;
         font-weight: bold;
         color: $c-menu;
-        // background-color: #FFF1DA;
-        // border: 1px solid #DBC9AA;
         border: 1px solid #707070;
         padding: 8px 15px;
         margin: 0 2px;
         white-space: nowrap;
-        // -moz-border-radius: 3px;
-        // -webkit-border-radius: 3px;
-        // border-radius: 3px;
         -webkit-transition: 0.2s ease-in-out;
         -moz-transition: 0.2s ease-in-out;
         -o-transition: 0.2s ease-in-out;
@@ -36,18 +30,13 @@
             border: none;
             font-weight: bold; 
         }
-        // a:hover{
-        //     color: #FFF;
-        //     background-color: #A09D71;
-        //     border-color: #999;
-        //     }
+        
         span.pages {
             border: none;
         }
+
         span.current{
         color: #FFF;
-        // background-color: #FC872E;
-        // border-color: #FC872E;
         background-color: #3c2b1c;
         border-color: #3c2b1c;
         font-weight: bold;

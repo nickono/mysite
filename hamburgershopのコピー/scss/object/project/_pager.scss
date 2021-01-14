@@ -39,10 +39,8 @@
 
 @include sm {
   .pager {
-    // display: block;
     justify-content: space-between;
     width: 89.4%;
-    // margin: 60.4px auto 31px;
     margin-top: 60.4px; 
     margin-bottom: 31px; 
 
@@ -50,11 +48,7 @@
       display: none;
     }
     .sm-left {
-      // text-align: left;
-      // margin: 0 0 0 5.3%;
-      // display: block;
       display: block;
-      // justify-content: left;
     }
     .sm-right {
       display: block;

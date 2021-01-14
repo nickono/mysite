@@ -1,7 +1,5 @@
 // breakpoints
-// $sm: 560px;
 $sm: 710px;
-// $md: 960px;
 $md: 1100px;
 $lg: 1920px;
 
@@ -70,7 +68,6 @@ $lg: 1920px;
             width: 43.5%;
             height:   auto;
             background-color: $bgc-brown;
-            // text-align: center;
           }
 
 @mixin cheeseburger-container-right-sm {
@@ -110,7 +107,6 @@ $lg: 1920px;
               width: 75.2%;
               font-size: 1.6rem;
               line-height: 1.9rem;
-            //   margin: 0 auto;
               text-align: left;
               padding-left: 9.3%;
             }
